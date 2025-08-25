@@ -1,0 +1,45 @@
+/* style.css */
+body, h1, h2, h3, p, ul { margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+      background-color: dodgerblue;
+    }
+.container { padding: 1rem;
+     max-width: 1200px;
+      margin: auto;
+}
+
+/* Flex Navigation */
+nav .flex { display: flex;
+ justify-content: space-between; 
+ align-items: center;
+ }
+
+nav .menu { list-style: none; 
+    display: flex; 
+    gap: 1rem;
+ }
+
+/* Grid Main Layout */
+main { display: grid; 
+grid-template-columns: 2fr 1fr;
+gap: 1rem;
+}
+.showcase { background: #169705;
+ padding: 2rem;
+}
+
+/* Footer */
+footer { text-align: center;
+padding: 1rem;
+background: #0d02a8;
+color: #242121;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  main { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  nav .menu { flex-direction: column; align-items: center; }
+}
